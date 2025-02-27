@@ -4,8 +4,8 @@
 This project is a **dynamic Employee Management System** developed using **JSP and Servlet**, running on **Apache Tomcat**. It provides functionalities for managing employees, HR, and managers, including workflow-based form management.
 
 ## Features
-- **HR Management**: HR can create new forms for departments as needed.
-- **Dynamic Workflows**: Workflows can be attached to forms and applied to users using triggers.
+- **HR Management**: HR can create new employee,departments,forms with workflow for departments as needed.
+- **Dynamic Workflows**: Workflows can be attached to forms and applied to users using triggers automatically.
 - **User Management**: Employees, HR, and managers can be managed efficiently.
 - **Database Integration**: Uses **PostgreSQL** for data storage.
 
