@@ -1,0 +1,128 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+     
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+           margin-top:10%;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+       
+        .login-container {
+          
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+       
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #2D9CDB;
+        }
+
+        button {
+            padding: 12px;
+            background-color:#0000ff ;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+			
+        }
+
+        button:hover {
+            background-color:  #000066;
+        }
+
+       
+        .error-message {
+            color: #FF4D4D;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+		.btn{
+		 width:300px;
+		 margin-left:50px;
+		 }
+    </style>
+	<script>
+       
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="LoginServlet" method="POST">
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email" required><br>
+            
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" required><br>
+            
+            <button type="submit">Login</button>
+        </form>
+       
+        <div class="error-message" id="error-message"></div>
+    </div>
+
+	<br>
+	<div>
+   
+       <form id="samlForm" action="SamlReqServlet" method="POST">
+       
+        <button type="submit" class="btn">Okta Authenticate</button>
+    </form>
+
+	</div>
+	
+</body>
+
+</html>
+

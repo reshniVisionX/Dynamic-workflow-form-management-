@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+		 
+
+
+    <servlet>
+        <servlet-name>LogIns</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    
+
+    <servlet-mapping>
+        <servlet-name>LogIns</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>FetchServlet</servlet-name>
+        <servlet-class>FetchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FetchServlet</servlet-name>
+        <url-pattern>/fetchData</url-pattern>
+    </servlet-mapping>
+
+   
+    <servlet>
+        <servlet-name>Insert</servlet-name>
+        <servlet-class>InsertServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Insert</servlet-name>
+        <url-pattern>/insertHr</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Edit</servlet-name>
+        <servlet-class>EditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Edit</servlet-name>
+        <url-pattern>/editHr</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Delete</servlet-name>
+        <servlet-class>DeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Delete</servlet-name>
+        <url-pattern>/deleteHr</url-pattern>
+    </servlet-mapping>
+
+  <servlet>
+        <servlet-name>FetchDB</servlet-name>
+        <servlet-class>FetchDBServlet</servlet-class> 
+     
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FetchDB</servlet-name>
+        <url-pattern>/FetchDBServlet</url-pattern>  
+    </servlet-mapping>
+	
+	  <servlet>
+        <servlet-name>InsertDept</servlet-name>
+        <servlet-class>InsertDeptServlet</servlet-class>
+    
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InsertDept</servlet-name>
+        <url-pattern>/InsertDeptServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>InsertForm</servlet-name>
+        <servlet-class>InsertFormServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>InsertForm</servlet-name>
+        <url-pattern>/InsertFormServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>DynamicForm</servlet-name>
+        <servlet-class>DynamicFormServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>DynamicForm</servlet-name>
+        <url-pattern>/DynamicFormServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>DynamicEmpFormFetch</servlet-name>
+        <servlet-class>FetchEmpFormServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>DynamicEmpFormFetch</servlet-name>
+        <url-pattern>/FetchEmpFormServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>DynamicInsertForm</servlet-name>
+        <servlet-class>DynamicInsertServlet </servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>DynamicInsertForm</servlet-name>
+        <url-pattern>/DynamicInsertServlet </url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>CSVExport</servlet-name>
+        <servlet-class>CSVExportServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>CSVExport</servlet-name>
+        <url-pattern>/CSVExportServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>CSVImport</servlet-name>
+        <servlet-class>UploadCSVServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>CSVImport</servlet-name>
+        <url-pattern>/UploadCSVServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>InsertEmployee</servlet-name>
+        <servlet-class>InsertEmployeeServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>InsertEmployee</servlet-name>
+        <url-pattern>/InsertEmployeeServlet</url-pattern>
+    </servlet-mapping>
+	
+	 
+	 <servlet>
+        <servlet-name>Profile</servlet-name>
+        <servlet-class>ProfileServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>Profile</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>Department</servlet-name>
+        <servlet-class>FetchDeptServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>Department</servlet-name>
+        <url-pattern>/FetchDeptServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>ExportCSV</servlet-name>
+        <servlet-class>ExportCSVServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>ExportCSV</servlet-name>
+        <url-pattern>/ExportCSVServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>GetDepartment</servlet-name>
+        <servlet-class>GetDepartmentsServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>GetDepartment</servlet-name>
+        <url-pattern>/GetDepartmentsServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>FetchAllForm</servlet-name>
+        <servlet-class>FetchAllFormServlet</servlet-class>
+    </servlet>
+	
+
+	
+ <servlet-mapping>
+        <servlet-name>FetchAllForm</servlet-name>
+        <url-pattern>/FetchAllFormServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>FetchDeptPeople</servlet-name>
+        <servlet-class>	FetchDeptPeopleServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FetchDeptPeople</servlet-name>
+        <url-pattern>/FetchDeptPeopleServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>AddCSV</servlet-name>
+        <servlet-class>AddCSVEmpServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddCSV</servlet-name>
+        <url-pattern>/AddCSVEmpServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	
+	<servlet>
+        <servlet-name>DeptAssignment</servlet-name>
+        <servlet-class>DeptAssignmentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeptAssignment</servlet-name>
+        <url-pattern>/DeptAssignmentServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>GenerateTbl</servlet-name>
+        <servlet-class>GenerateTblServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GenerateTbl</servlet-name>
+        <url-pattern>/GenerateTblServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>InsertDomainServlet</servlet-name>
+        <servlet-class>InsertDomainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertDomainServlet</servlet-name>
+        <url-pattern>/InsertDomainServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>FetchDomainsServlet</servlet-name>
+        <servlet-class>FetchDomainsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FetchDomainsServlet</servlet-name>
+        <url-pattern>/FetchDomainsServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>InsertCustomFormServlet</servlet-name>
+        <servlet-class>InsertCustomFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertCustomFormServlet</servlet-name>
+        <url-pattern>/InsertCustomFormServlet</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>InternalServerErrorServlet</servlet-name>
+        <servlet-class>InternalServerErrorServlet</servlet-class>
+    </servlet>
+	
+    <servlet-mapping>
+        <servlet-name>InternalServerErrorServlet</servlet-name>
+        <url-pattern>/InternalServerErrorServlet</url-pattern>
+    </servlet-mapping>
+	
+ 
+
+<servlet>
+    <servlet-name>SAMLResponseServlet</servlet-name>
+    <servlet-class>SAMLResponseServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SAMLResponseServlet</servlet-name>
+    <url-pattern>/samlresponse</url-pattern>
+</servlet-mapping>
+
+	
+    <servlet>
+        <servlet-name>fetchWrkflNamesServlet</servlet-name>
+        <servlet-class>fetchWrkflNamesServlet</servlet-class>
+    </servlet>
+	
+    <servlet-mapping>
+        <servlet-name>fetchWrkflNamesServlet</servlet-name>
+        <url-pattern>/fetchWrkflNamesServlet</url-pattern>
+    </servlet-mapping>
+	
+	
+
+   
+    <error-page>
+        <error-code>500</error-code>
+        <location>/InternalServerErrorServlet</location>
+    </error-page> 
+	
+    
+
+	
+	<multipart-config>
+        <file-size-threshold>1024</file-size-threshold>
+        <max-file-size>10485760</max-file-size> 
+        <max-request-size>20971520</max-request-size> 
+    </multipart-config>
+	
+	  <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location>
+    </error-page>
+	
+
+	
+</web-app>
